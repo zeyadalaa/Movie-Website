@@ -1,10 +1,8 @@
 
 import Card from '@/components/Card'
 import Layout from '@/components/Layout'
-import Navbar from '@/components/Navbar'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Card.module.css'
-import { staticPageGenerationTimeout } from '@/next.config'
 import { getAllGenreName , getPopularMovies ,getGenreName} from './api/tmdb'
 
 const inter = Inter({ subsets: ['latin'] })
