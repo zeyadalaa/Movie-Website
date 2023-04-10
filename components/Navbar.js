@@ -18,17 +18,17 @@ export default function Navbar() {
             <div className={styles.navButton}>
               <li>
                 <Link className={styles.link} href={"/"}>
-                  test
+                  Popular Movies
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={"/"}>
-                  test
+                <Link className={styles.link} href={"/trending"}>
+                  Trending
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={"/"}>
-                  test
+                <Link className={styles.link} href={"/tvseries"}>
+                  Tv Series
                 </Link>
               </li>
             </div>

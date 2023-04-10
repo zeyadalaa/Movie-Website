@@ -66,7 +66,13 @@
     font-weight: bold;
     border-bottom: gold solid 2px;
 }
-
+.movieDescription{
+    overflow: auto;
+    max-height: 260px; /* Set the max height of the container */
+}
+.movieDescription::-webkit-scrollbar{
+    display: none;
+}
 .overview{
     margin-top: 7px;
     font-size: 11px;
