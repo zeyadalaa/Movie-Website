@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <div className={styles.navbar}>
-        <div className={styles.container}>
+        <div className="container">
             <ul id={styles.list}>
             <div className={styles.searchBar}>
               <input type="text" className={styles.search} placeholder="Search.."></input>
