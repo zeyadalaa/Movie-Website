@@ -90,6 +90,29 @@
     border-radius: 15px;
     margin-right: 2px;
 }
-.card .movieinfo .tags span:nth-child(2){
-    background: #ff5722  ;
+.progressBar{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    bottom: -30px;
+    right: -20px;
+    background: rgb(0, 0, 0);
+    border-radius: 60%;
+    box-shadow: 0 0 15px rgba(36, 36, 36, 0.4);
+    z-index: 6;
+}
+
+  
+.progressBar .rc-progressBar-path {
+    stroke-linecap: round;
+}
+ 
+.progresstext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
 }
