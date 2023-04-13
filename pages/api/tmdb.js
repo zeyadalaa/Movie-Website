@@ -47,3 +47,13 @@ export async function getTvSeries() {
   
   return response.data.results;
 }
+
+export async function getNowPlaying() {
+  const response = await axios.get(`${TMDB_API_BASE_URL}/movie/now_playing`, {
+    params: {
+      api_key: process.env.TMDB_API_KEY,
+    },
+  });
+  
+  return response.data.results;
+}

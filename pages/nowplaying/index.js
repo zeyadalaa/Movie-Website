@@ -2,11 +2,11 @@ import Card from '@/components/Card'
 import Layout from '@/components/Layout'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Card.module.css'
-import { getAllGenreName , getTrendingMovies ,getGenreName} from '../api/tmdb'
+import { getAllGenreName , getNowPlaying ,getGenreName} from '../api/tmdb'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Trending(props) {
+export default function NowPlaying(props) {
   return (
     <>
       <Layout/>
@@ -24,7 +24,7 @@ export default function Trending(props) {
 }
 
 export async function getStaticProps() {
-    const movies  = await getTrendingMovies()
+    const movies  = await getNowPlaying()
     const allGenreNames = await getAllGenreName()
   
     const genreIds = movies.flatMap((movie) => movie.genre_ids);

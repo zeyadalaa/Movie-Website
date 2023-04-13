@@ -38,3 +38,7 @@
     position: fixed;
     z-index: 9999;
 }
+#playing{
+    background-color: #B22222;
+    border-radius: 40px;
+}
