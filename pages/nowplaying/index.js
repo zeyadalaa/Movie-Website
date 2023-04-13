@@ -14,7 +14,7 @@ export default function NowPlaying(props) {
         {
           props.movies.map((movie)=>(
             <div key={movie.id}>
-              <Card title={movie.title||movie.name} overview={movie.overview} poster={movie.poster_path} genre_ids={movie.genre_name}/>
+              <Card title={movie.title||movie.name} overview={movie.overview} poster={movie.poster_path} genre_ids={movie.genre_name} vote_average={movie.vote_average}/>
             </div>
           ))
         }
